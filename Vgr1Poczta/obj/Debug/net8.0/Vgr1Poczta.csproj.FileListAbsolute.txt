@@ -65,3 +65,4 @@
 /home/js/RiderProjects/Vgr1Poczta/Vgr1Poczta/obj/Debug/net8.0/Vgr1Poczta.csproj.CopyComplete
 /home/js/RiderProjects/Vgr1Poczta/Vgr1Poczta/obj/Debug/net8.0/Vgr1Poczta.genruntimeconfig.cache
 /home/js/RiderProjects/Vgr1Poczta/Vgr1Poczta/obj/Debug/net8.0/ref/Vgr1Poczta.dll
+/home/js/RiderProjects/Vgr1Poczta/Vgr1Poczta/obj/Debug/net8.0/Vgr1Poczta.sourcelink.json

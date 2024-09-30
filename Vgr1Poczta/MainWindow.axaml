@@ -19,19 +19,55 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+                <StackPanel>
+                        <Border BorderBrush="Gray" BorderThickness="2" Margin="50" >
+                                <StackPanel>
+                                        <TextBlock Text="Rodzaj przesyłki"
+                                                   Margin="10,-10,0,10" Width="120" Background="White" HorizontalAlignment="Left"
+                                                   Padding="5,0,5,0"
+                                        />
+                                        <StackPanel>
+                                                <RadioButton Content="Pocztówka"  GroupName="przesylki"/>
+                                                <RadioButton Content="List" GroupName="przesylki"/>
+                                                <RadioButton Content="Paczka" GroupName="przesylki"/>
+                                       
+                                        </StackPanel>
+                                </StackPanel>
+                       
+                       
+                       
+                        </Border>
+                        <Button Grid.Row="1" Content="Sprawdź Cenę" Width="200"/>
+                        <StackPanel Orientation="Horizontal">
+                                <Image Grid.Row="2" Source="Assets/letter.png" Width="100"/>
+                                <TextBlock x:Name="Cena" Text="Cena:"></TextBlock> 
+                                
+                        </StackPanel>
+                        
+                        
+                        
+                </StackPanel>
                 
-               <Border BorderBrush="Gray" BorderThickness="2">
-                       <StackPanel>
-                               <TextBlock Text="Rodzaj przesyłki"/>
-                               <StackPanel>
-                                       
-                                       
-                               </StackPanel>
-                               
-                       </StackPanel>
-                       
-                       
-                       
-               </Border> 
+                <Button Grid.Row="1" Content="Zatwierdź" Grid.ColumnSpan="2"/>
+                
+                <Border Grid.Column="1">
+                        <StackPanel>
+                                <TextBlock Text="Dane Adresowe"/>
+                                <TextBlock Text="Ulica z numerami"/>
+                                <TextBox/>
+                                <TextBlock Text="kod pocztowy"/>
+                                <TextBox/>
+                                <TextBlock Text="miasto"/>
+                                <TextBox/>
+                                
+                        </StackPanel>
+                        
+                                
+                                
+                        
+                        
+                        
+                </Border>
+                
         </Grid>
 </Window>
