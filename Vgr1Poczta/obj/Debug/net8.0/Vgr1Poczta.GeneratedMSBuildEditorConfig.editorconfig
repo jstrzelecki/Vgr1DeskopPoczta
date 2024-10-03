@@ -24,3 +24,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/js/RiderProjects/Vgr1Poczta/Vgr1Poczta/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/js/RiderProjects/Vgr1Poczta/Vgr1Poczta/PopUpWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

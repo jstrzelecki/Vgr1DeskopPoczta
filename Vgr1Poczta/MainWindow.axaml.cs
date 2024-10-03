@@ -44,23 +44,29 @@ public partial class MainWindow : Window
 
     private void SubmitButton(object? sender, RoutedEventArgs e)
     {
-        Regex regex = new Regex("[0-9]*");
-        int cityCodeNumber = 0;
-        if (KodPocztowyTextBox.Text.Length != 5)
-        {
-            Console.WriteLine("nie poprawna ilosc znakow");
-        }
-        else if ()
-        {
-            Console.WriteLine("poprawne znaki");
-        }
-        else if (KodPocztowyTextBox.Text.Length == 5)
-        {
-            Console.WriteLine("poprawna ilosc znakow");
-        }
+        int zipCode;
+        bool isNumber = int.TryParse(KodPocztowyTextBox.Text, out zipCode);
+
+        var infoWindow = new PopUpWindow();
         
+        if (!isNumber)
+        {
+           
+            infoWindow.InfoLabel.Content = "To nie jest liczba";
+            infoWindow.ShowDialog(this);
+            return;
+        }
+
+        if (zipCode.ToString().Length != 5)
         {
             
+            infoWindow.InfoLabel.Content = "Niepoprawna liczba znakow";
+            infoWindow.ShowDialog(this);
+            return;
         }
+        
+       
+        infoWindow.InfoLabel.Content = "Dane zostały zapisane";
+        infoWindow.ShowDialog(this);
     }
 }

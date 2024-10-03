@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Vgr1Poczta/MainWindow.axaml" value="Vgr1Poczta/Vgr1Poczta.csproj" />
+        <entry key="Vgr1Poczta/PopUpWindow.axaml" value="Vgr1Poczta/Vgr1Poczta.csproj" />
       </map>
     </option>
   </component>

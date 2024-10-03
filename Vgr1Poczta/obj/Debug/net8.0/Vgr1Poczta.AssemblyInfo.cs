@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vgr1Poczta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4b186d668ab791ac7181ddae6adab20d464169a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a26636e33bb444e77ca71f9d8a60bee983663d92")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vgr1Poczta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vgr1Poczta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
