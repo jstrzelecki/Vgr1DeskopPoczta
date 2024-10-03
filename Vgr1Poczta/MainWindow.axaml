@@ -26,10 +26,10 @@
                                                    Margin="10,-10,0,10" Width="120" Background="White" HorizontalAlignment="Left"
                                                    Padding="5,0,5,0"
                                         />
-                                        <StackPanel>
-                                                <RadioButton Content="Pocztówka"  GroupName="przesylki"/>
-                                                <RadioButton Content="List" GroupName="przesylki"/>
-                                                <RadioButton Content="Paczka" GroupName="przesylki"/>
+                                        <StackPanel Margin="10">
+                                                <RadioButton x:Name="Pocztowka" Content="Pocztówka"  GroupName="przesylki"/>
+                                                <RadioButton x:Name="List" Content="List" IsChecked="True" GroupName="przesylki"/>
+                                                <RadioButton x:Name="Paczka" Content="Paczka" GroupName="przesylki"/>
                                        
                                         </StackPanel>
                                 </StackPanel>
@@ -37,10 +37,10 @@
                        
                        
                         </Border>
-                        <Button Grid.Row="1" Content="Sprawdź Cenę" Width="200"/>
+                        <Button Click="SprawdzCeneButton" Grid.Row="1" Content="Sprawdź Cenę" Width="200"/>
                         <StackPanel Orientation="Horizontal">
-                                <Image Grid.Row="2" Source="Assets/letter.png" Width="100"/>
-                                <TextBlock x:Name="Cena" Text="Cena:"></TextBlock> 
+                                <Image x:Name="Obrazek" Grid.Row="2" Source="Assets/letter.png" Width="100"/>
+                                <TextBlock x:Name="Cena" Text="Cena: 1.5zł"></TextBlock> 
                                 
                         </StackPanel>
                         
@@ -48,7 +48,7 @@
                         
                 </StackPanel>
                 
-                <Button Grid.Row="1" Content="Zatwierdź" Grid.ColumnSpan="2"/>
+                <Button Grid.Row="1" Content="Zatwierdź" Grid.ColumnSpan="2" Click="SubmitButton"/>
                 
                 <Border Grid.Column="1">
                         <StackPanel>
@@ -56,7 +56,7 @@
                                 <TextBlock Text="Ulica z numerami"/>
                                 <TextBox/>
                                 <TextBlock Text="kod pocztowy"/>
-                                <TextBox/>
+                                <TextBox x:Name="KodPocztowyTextBox"/>
                                 <TextBlock Text="miasto"/>
                                 <TextBox/>
                                 
